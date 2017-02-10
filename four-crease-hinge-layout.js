@@ -495,6 +495,57 @@
       id: 'a4',
       "class": 'K line fill blue'
     }));
+    circleG = svg.appendChild(createSVG('g', {
+      id: 'circleG'
+    }));
+    circleG.appendChild(createSVG('circle', {
+      id: 'c11',
+      "class": 'K line circle'
+    }));
+    circleG.appendChild(createSVG('circle', {
+      id: 'c21',
+      "class": 'K line circle'
+    }));
+    circleG.appendChild(createSVG('circle', {
+      id: 'c31',
+      "class": 'K line circle'
+    }));
+    circleG.appendChild(createSVG('circle', {
+      id: 'c41',
+      "class": 'K line circle'
+    }));
+    circleG.appendChild(createSVG('circle', {
+      id: 'c12',
+      "class": 'K line circle'
+    }));
+    circleG.appendChild(createSVG('circle', {
+      id: 'c22',
+      "class": 'K line circle'
+    }));
+    circleG.appendChild(createSVG('circle', {
+      id: 'c32',
+      "class": 'K line circle'
+    }));
+    circleG.appendChild(createSVG('circle', {
+      id: 'c42',
+      "class": 'K line circle'
+    }));
+    circleG.appendChild(createSVG('circle', {
+      id: 'c13',
+      "class": 'K line circle'
+    }));
+    circleG.appendChild(createSVG('circle', {
+      id: 'c23',
+      "class": 'K line circle'
+    }));
+    circleG.appendChild(createSVG('circle', {
+      id: 'c33',
+      "class": 'K line circle'
+    }));
+    circleG.appendChild(createSVG('circle', {
+      id: 'c43',
+      "class": 'K line circle'
+    }));
     sketchG = svg.appendChild(createSVG('g', {
       id: 'sketchG'
     }));
@@ -561,57 +612,6 @@
     sketchG.appendChild(createSVG('path', {
       id: 'l4',
       "class": 'K line nofill'
-    }));
-    circleG = svg.appendChild(createSVG('g', {
-      id: 'circleG'
-    }));
-    circleG.appendChild(createSVG('circle', {
-      id: 'c11',
-      "class": 'K line circle'
-    }));
-    circleG.appendChild(createSVG('circle', {
-      id: 'c21',
-      "class": 'K line circle'
-    }));
-    circleG.appendChild(createSVG('circle', {
-      id: 'c31',
-      "class": 'K line circle'
-    }));
-    circleG.appendChild(createSVG('circle', {
-      id: 'c41',
-      "class": 'K line circle'
-    }));
-    circleG.appendChild(createSVG('circle', {
-      id: 'c12',
-      "class": 'K line circle'
-    }));
-    circleG.appendChild(createSVG('circle', {
-      id: 'c22',
-      "class": 'K line circle'
-    }));
-    circleG.appendChild(createSVG('circle', {
-      id: 'c32',
-      "class": 'K line circle'
-    }));
-    circleG.appendChild(createSVG('circle', {
-      id: 'c42',
-      "class": 'K line circle'
-    }));
-    circleG.appendChild(createSVG('circle', {
-      id: 'c13',
-      "class": 'K line circle'
-    }));
-    circleG.appendChild(createSVG('circle', {
-      id: 'c23',
-      "class": 'K line circle'
-    }));
-    circleG.appendChild(createSVG('circle', {
-      id: 'c33',
-      "class": 'K line circle'
-    }));
-    circleG.appendChild(createSVG('circle', {
-      id: 'c43',
-      "class": 'K line circle'
     }));
     getId('aR').addEventListener('input', function() {
       return update();
