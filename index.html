@@ -1,13 +1,22 @@
 <html xmlns='http://www.w3.org/1999/xhtml/'>
-<head>
-<script type='text/javascript' src='four-crease-hinge-layout.js'></script>
-</head>
+<head><style>
+  input[type='range'] { width: 500; }
+</style></head>
 <body>
 <h3>Four Crease Hinge Layout</h3>
-Hello World! Testing... Again...
+<input type='range' id='aR' max='1' step='0.001'> a <br>
+<input type='range' id='bR' max='1' step='0.001'> (b - a) / (&pi; - 2a) <br>
+<input type='range' id='tR' max='1' value='1' step='0.001'> t <br>
+<input type='range' id='rR' max='1' value='1' step='0.001'> r <br>
+<input type='button' id='front' value='Front'>
+<input type='button' id='back' value='Back'>
+<input type='button' id='circle' value='Circles'>
+<input type='button' id='sketch' value='Sketch'>
+a: <span id='aL'></span>,
+b: <span id='bL'></span>,
+t: <span id='tL'></span>,
+r: <span id='rL'></span>
 <div id='draw'></div>
-<p style='text-align:right'>
-(C) Jason S. Ku 2017
-</p>
-</body>
-</html>
+<p style='text-align:right'> (C) Jason S. Ku 2017 </p>
+<script type='text/javascript' src='four-crease-hinge-layout.js'></script>
+</body></html>
