@@ -77,7 +77,7 @@ update = () ->
   getId('aL').innerHTML = (a*180/PI).toFixed(2)
   getId('bL').innerHTML = (b*180/PI).toFixed(2)
   getId('tL').innerHTML = t.toFixed(2)
-  getId('rL').innerHTML = r.toFixed(2)
+  getId('rL').innerHTML = (r*180/PI).toFixed(2)
 
   f1 = makeSector(0, a)
   f2 = makeSector(a, b)
@@ -142,7 +142,7 @@ update = () ->
   p5 = mul(u4, 1-x)
   p6 = plus(p5, mul(v4, t1))
   p7 = plus(f4[1], mul(v4, t1))
-  ps = [p1, p2, p3, p4, p5, p6, p7].concat(f4.slice(1))
+  ps = [p1, p2, p3, p4, p5, p6, p7].concat(f4.slice(2))
   getId('a4').setAttribute('d', makeCycle(ps))
 
   p2 = mul(u1, MAX(0, t2 / TAN(PI - b)))
