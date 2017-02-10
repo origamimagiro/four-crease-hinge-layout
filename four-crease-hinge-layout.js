@@ -641,6 +641,13 @@
       showC = !showC;
       return update();
     });
+    getId('export').addEventListener('click', function() {
+      getId('out').setAttribute('download', 'ex.svg');
+      getId('out').setAttribute('href', URL.createObjectURL(new Blob([getId('draw').innerHTML], {
+        type: 'image/svg+xml'
+      })));
+      return getId('out').click();
+    });
     return update();
   };
 

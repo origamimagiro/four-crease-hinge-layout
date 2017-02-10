@@ -264,5 +264,10 @@ window.onload = () ->
   getId(  'back').addEventListener('click', () -> showB = !showB; update())
   getId('sketch').addEventListener('click', () -> showS = !showS; update())
   getId('circle').addEventListener('click', () -> showC = !showC; update())
+  getId('export').addEventListener('click', () ->
+    getId('out').setAttribute('download', 'ex.svg')
+    getId('out').setAttribute('href', URL.createObjectURL(
+      new Blob([getId('draw').innerHTML], {type: 'image/svg+xml'})))
+    getId('out').click())
 
   update()
